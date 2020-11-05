@@ -55,7 +55,7 @@ volumes:
 - name: DATABASE_PORT
   value: "5432"
 - name: POOL_SIZE
-  value: {{ .Values.blockscout.pool_size }}
+  value: {{ .Values.blockscout.pool_size | quote }}
 - name: HEALTHY_BLOCKS_PERIOD
   value: {{ .Values.blockscout.healthy_blocks_period | quote }}
 - name: MIX_ENV
