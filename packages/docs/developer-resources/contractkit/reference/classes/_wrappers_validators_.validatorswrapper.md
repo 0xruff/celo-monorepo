@@ -724,7 +724,7 @@ ___
 
 ▸ **findValidatorMembershipHistoryIndex**(`epoch`: number, `history`: [GroupMembership](../interfaces/_wrappers_validators_.groupmembership.md)[]): *number*
 
-*Defined in [packages/contractkit/src/wrappers/Validators.ts:619](https://github.com/celo-org/celo-monorepo/blob/master/packages/contractkit/src/wrappers/Validators.ts#L619)*
+*Defined in [packages/contractkit/src/wrappers/Validators.ts:618](https://github.com/celo-org/celo-monorepo/blob/master/packages/contractkit/src/wrappers/Validators.ts#L618)*
 
 Returns the index into `history` for `epoch`.
 
@@ -908,17 +908,17 @@ ___
 
 ###  getValidatorMembershipHistoryIndex
 
-▸ **getValidatorMembershipHistoryIndex**(`validator`: [Validator](../interfaces/_wrappers_validators_.validator.md), `blockNumber?`: undefined | number): *Promise‹object›*
+▸ **getValidatorMembershipHistoryIndex**(`account`: [Address](../modules/_base_.md#address), `blockNumber?`: undefined | number): *Promise‹object›*
 
 *Defined in [packages/contractkit/src/wrappers/Validators.ts:599](https://github.com/celo-org/celo-monorepo/blob/master/packages/contractkit/src/wrappers/Validators.ts#L599)*
 
-Returns the group membership for `validator`.
+Returns the group membership for validator account.
 
 **Parameters:**
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`validator` | [Validator](../interfaces/_wrappers_validators_.validator.md) | Address of validator to retrieve group membership for. |
+`account` | [Address](../modules/_base_.md#address) | Address of validator account to retrieve group membership for. |
 `blockNumber?` | undefined &#124; number | Block number to retrieve group membership at. |
 
 **Returns:** *Promise‹object›*
